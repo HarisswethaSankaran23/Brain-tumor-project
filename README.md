@@ -1,7 +1,7 @@
 <h1>🧠 Brain Tumor Detection Using Deep Learning</h1>
 
 <h2>Description</h2>
-This project uses deep learning and image processing techniques to detect brain tumors from MRI scans. It involves preprocessing, segmentation, and classification using Convolutional Neural Networks (CNNs) and traditional machine learning models. The goal is to support early detection and diagnosis of brain tumors, improving clinical decision-making.
+This project aims to identify and segment brain tumors in MRI images using a combination of preprocessing, thresholding, and deep learning models. It includes multiple segmentation approaches such as CNN, FCM, and K-Means clustering.
 <br />
 
 <h2>Languages and Utilities Used</h2>
@@ -13,13 +13,45 @@ This project uses deep learning and image processing techniques to detect brain 
 
 <h2>Environments Used</h2>
 
-- <b>Jupyter Notebook / Google Colab</b>  
-- <b>Python 3.x</b>  
-- <b>Windows/Linux OS</b>  
+- <b>Jupyter Notebook</b>  
+- <b>Google Colab</b>  
+- <b>Windows/Linux</b>  
 
-<h2>Workflow:</h2>
+<h2>Project Walk-through:</h2>
 
+<h3>Stage 1: Skull Stripping</h3>
 <p align="center">
+<img src="7a75a8d4-2e0d-487b-a3c9-4d2fae06cc9f.png" height="80%" width="80%" alt="Skull Stripping"/>
+</p>
+
+<h3>Segmentation Using FCM</h3>
+<p align="center">
+<img src="dd964f9d-471a-4ed4-88b6-20355ef26292.png" height="80%" width="80%" alt="Segmentation FCM"/>
+</p>
+
+<h3>Segmentation Using K-Means Clustering</h3>
+<p align="center">
+<img src="f789b3cc-2f0f-40db-9acc-3e7041da9025.png" height="80%" width="80%" alt="Segmentation KMeans"/>
+</p>
+
+<h3>Performance Comparison Table</h3>
+<p align="center">
+<img src="0a6c558b-1d22-4b52-9414-227218afc9a8.png" height="80%" width="80%" alt="Performance Table"/>
+</p>
+
+<h2>Features</h2>
+
+- Skull stripping, image thresholding, and enhancement  
+- CNN-based tumor region extraction  
+- Fuzzy C-Means and K-Means clustering comparisons  
+- Performance metrics with accuracy comparisons  
+
+<h2>Future Scope</h2>
+
+- Extend to multi-class tumor classification  
+- Use 3D MRI volumes for better precision  
+- Deploy the model as a web-based diagnostic tool
+
 Step 1: Input MRI Brain Image <br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Input Image"/>
 <br /><br />
